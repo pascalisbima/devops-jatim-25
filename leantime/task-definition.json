@@ -1,0 +1,48 @@
+{
+  // FILL IN THE MISSING VALUES BELOW
+  "family": "",
+  "taskRoleArn": "",
+  "executionRoleArn": "",
+  "networkMode": "",
+  "requiresCompatibilities": ???,
+  "cpu": "",
+  "memory": "",
+  "volumes": [],
+  // FILL IN THE MISSING VALUES ABOVE
+
+  "placementConstraints": [],
+  "runtimePlatform": {
+    "cpuArchitecture": "X86_64",
+    "operatingSystemFamily": "LINUX"
+  },
+  "enableFaultInjection": false,
+
+  "containerDefinitions": [
+    {
+      "name": "leantime",
+      "image": "leantime/leantime:latest",
+      "cpu": 0,
+      "essential": true,
+      "volumesFrom": [],
+      "systemControls": [],
+
+      // FILL IN THE MISSING VALUES BELOW
+      "portMappings": [],
+      "secrets": [],
+      "environment": [],
+      "mountPoints": [],
+      "logConfiguration": {
+        "logDriver": "???",
+        "options": {
+          "awslogs-group": "???",
+          "awslogs-region": "???",
+          "mode": "non-blocking",
+          "awslogs-create-group": "true",
+          "max-buffer-size": "25m",
+          "awslogs-stream-prefix": "ecs"
+        }
+      }
+      // FILL IN THE MISSING VALUES ABOVE
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  // FILL IN THE MISSING VALUES BELOW
+  "family": "",
+  "taskRoleArn": "",
+  "executionRoleArn": "",
+  "networkMode": "",
+  "volumes": [],
+  "placementConstraints": [],
+  "requiresCompatibilities": ???,
+  "cpu": "",
+  "memory": "",
+  // FILL IN THE MISSING VALUES ABOVE
+
+  "runtimePlatform": {
+    "cpuArchitecture": "X86_64",
+    "operatingSystemFamily": "LINUX"
+  },
+  "enableFaultInjection": false,
+  "containerDefinitions": [
+    {
+      "name": "gatus",
+      "image": "<task-def-image>", // WARN: REMOVE THIS COMMENT AND DO NOT CHANGE THIS LINE
+      "cpu": 0,
+      "essential": true,
+      "volumesFrom": [],
+      "systemControls": [],
+
+      // FILL IN THE MISSING VALUES BELOW
+      "portMappings": [],
+      "logConfiguration": {
+        "logDriver": "???",
+        "options": {
+          "awslogs-group": "???",
+          "awslogs-region": "???",
+          "mode": "non-blocking",
+          "awslogs-create-group": "true",
+          "max-buffer-size": "25m",
+          "awslogs-stream-prefix": "ecs"
+        }
+      }
+      // FILL IN THE MISSING VALUES ABOVE
+    }
+  ]
+}
